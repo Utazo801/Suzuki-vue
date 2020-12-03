@@ -1,0 +1,54 @@
+{
+    "editor.minimap.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "html.format.wrapLineLength": 0,
+    "files.autoSave": "afterDelay",
+    "files.eol": "\r\n",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.gitignore": false,
+        "**/.vscode": false,
+        "**/tsconfig.json": false,
+        "**/tslint.json": false,
+        "**/package-lock.json": true,
+        "**/dist": true,
+        "**/public": true,
+        "**/node_modules": true,
+        "**/*.js.map": true,
+        "**/*.npmrc": true
+    },
+    "spellright.notificationClass": "information",
+    "spellright.language": [
+        "en",
+        "hu"
+    ],
+    "spellright.documentTypes": [
+        "latex"
+    ],
+    "terminal.integrated.rendererType": "dom",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
