@@ -4,10 +4,10 @@
       <b-container>
         <b-row class="my-1">
           <b-col sm="3">
-            <label for="iFoodName">Étel neve:</label>
+            <label for="iFoodName">Autó:</label>
           </b-col>
           <b-col sm="9">
-            <b-form-input id="iFoodName" v-model="foodName" placeholder="Kérem az étel nevét!" type="text"></b-form-input>
+            <b-form-input id="iFoodName" v-model="foodName" placeholder="Kérem az autó nevét!" type="text"></b-form-input>
           </b-col>
         </b-row>
         <b-row class="my-1">
