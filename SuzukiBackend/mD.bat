@@ -1,0 +1,1 @@
+"D:\Programok\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="D:\Programok\data\db"
