@@ -6,7 +6,12 @@
     <button :disabled="!totalTvCount" @click="buyTv(1)">Buy TV</button>
     <button :disabled="totalTvCount < 2" @click="buyTv(2)">Buy Two TVs</button>
 
-    
+    <h3>Demo Link:</h3>
+    <ul>
+      <li>
+        <a href="https://itnext.io/vuex-made-simple-getting-started-6bf229d432cf" target="_blank" rel="noopener">Vuex made simple</a>
+      </li>
+    </ul>
   </div>
 </template>
 

@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
 const csudijoSchemaOptions: mongoose.SchemaOptions = {
-  collection: "CarCollection",
+  collection: "CsudijoFoodCollection",
   versionKey: false
 };
 
 export const csudijoSchema = new mongoose.Schema(
   {
-    carName: {
-      default: "Kicsi kocsi Suzuki",
-      required: "Kérem adjon meg egy auto nevet!",
+    foodName: {
+      default: "Lecsó kolbászcsipszel",
+      required: "Kérem adjon meg egy étel nevet!",
       type: String,
       unique: true
     },

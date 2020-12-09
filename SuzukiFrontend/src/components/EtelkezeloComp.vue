@@ -1,11 +1,11 @@
 <template>
   <div class="etelkezelo">
     <section id="szavazas" class="szurke-hatter">
-      <h2>Szavazzon a legnepszerűbb autónkra</h2>
+      <h2>Szavazzon a legnepszerűbb ételünkre</h2>
       <b-container fluid>
         <b-row>
           <b-col sm="3">
-            <label for="foodInput">Új autó felvétele szavazással:</label>
+            <label for="foodInput">Új étel felvétele szavazással:</label>
           </b-col>
           <b-col sm="6">
             <b-form-input id="foodInput" v-model="newFoodName"></b-form-input>
@@ -39,7 +39,7 @@
             </b-row>
             <b-row class="mb-2">
               <b-col sm="3" class="text-sm-right">
-                <b>Autó neve:</b>
+                <b>Étel neve:</b>
               </b-col>
               <b-col sm="9">{{ row.item.foodName }}</b-col>
             </b-row>
@@ -75,7 +75,7 @@ export default class EtelkezeloComp extends Vue {
   private newFoodName: string = "";
 
   private foodFields = [
-    { key: "foodName", label: "Autó neve", sortable: false },
+    { key: "foodName", label: "Étel neve", sortable: false },
     { key: "numberOfVote", label: "Szavazatok", sortable: false },
     { key: "action", label: "Egyéb", sortable: false }
   ];
