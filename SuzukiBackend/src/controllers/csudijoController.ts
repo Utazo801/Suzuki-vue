@@ -5,85 +5,85 @@ import { csudijoSchema } from "../models/csudijoModel";
 const mongooseCsudijo = mongoose.model("Csudijo", csudijoSchema);
 
 export class CsudijoController {
-  public addNewFood(req: Request, res: Response): void {
-    const newFood = new mongooseCsudijo(req.body);
-    newFood.save((err, food) => {
+  public addNewCar(req: Request, res: Response): void {
+    const newCar = new mongooseCsudijo(req.body);
+    newCar.save((err, car) => {
       if (err) {
         res.send(err);
       } else {
-        res.json(food);
+        res.json(car);
       }
     });
   }
 
-  public getAllFoods(req: Request, res: Response): void {
-    mongooseCsudijo.find({}, (err, food) => {
+  public getAllCars(req: Request, res: Response): void {
+    mongooseCsudijo.find({}, (err, car) => {
       if (err) {
         res.send(err);
       } else {
-        res.json(food);
+        res.json(car);
       }
     });
   }
 
-  public getTopFoods(req: Request, res: Response): void {
+  public getTopCars(req: Request, res: Response): void {
     mongooseCsudijo
       .find({})
       .sort({ numberOfVote: "desc" })
       .limit(1)
-      .exec((err, food) => {
+      .exec((err, car) => {
         if (err) {
           res.send(err);
         } else {
-          if (food.length > 0) {
-            const max = (food[0] as any).numberOfVote;
-            mongooseCsudijo.find({ numberOfVote: max }, (error, foods) => {
+          if (car.length > 0) {
+            const max = (car[0] as any).numberOfVote;
+            mongooseCsudijo.find({ numberOfVote: max }, (error, cars) => {
               if (error) {
                 res.send(error);
               } else {
                 // 9. feladat:
                 // Az ételek összes adata átkerül, nekünk elegendőek az ételek nevei
-                res.json(foods);
+                res.json(cars);
               }
             });
           } else {
             // Ha még nincs étel a kollekcióban:
-            res.json({ error: "No food!" });
+            res.json({ error: "No car!" });
           }
         }
       });
   }
 
-  public getFoodWithID(req: Request, res: Response): void {
-    mongooseCsudijo.findById(req.params.foodId, (err, food) => {
+  public getCarWithID(req: Request, res: Response): void {
+    mongooseCsudijo.findById(req.params.carId, (err, car) => {
       if (err) {
         res.send(err);
       } else {
-        res.json(food);
+        res.json(car);
       }
     });
   }
 
-  public updateFood(req: Request, res: Response): void {
+  public updateCar(req: Request, res: Response): void {
     const updateOptions: mongoose.QueryFindOneAndUpdateOptions = {
       new: true, // return the modified document
       runValidators: true // runs update validators on this command
     };
-    mongooseCsudijo.findOneAndUpdate({ _id: req.params.foodId }, req.body, updateOptions, (err, food) => {
+    mongooseCsudijo.findOneAndUpdate({ _id: req.params.carId }, req.body, updateOptions, (err, car) => {
       if (err) {
         res.send(err);
       } else {
-        res.json(food);
+        res.json(car);
       }
     });
   }
 
-  public deleteFood(req: Request, res: Response): void {
-    mongooseCsudijo.deleteOne({ _id: req.params.foodId }, err => {
+  public deleteCar(req: Request, res: Response): void {
+    mongooseCsudijo.deleteOne({ _id: req.params.carId }, err => {
       if (err) {
         res.send(err);
       } else {
-        res.json({ message: "Successfully deleted food!" });
+        res.json({ message: "Successfully deleted car!" });
       }
     });
   }
