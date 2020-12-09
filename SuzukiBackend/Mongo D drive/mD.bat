@@ -1,0 +1,1 @@
+"D:\Programok\MongoDB\Server\4.4\bin" --dbpath="c:\data\db"
