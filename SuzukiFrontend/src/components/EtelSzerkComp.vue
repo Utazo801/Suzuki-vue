@@ -4,7 +4,7 @@
       <b-container>
         <b-row class="my-1">
           <b-col sm="3">
-            <label for="iFoodName">Étel neve:</label>
+            <label for="iFoodName">Autó neve:</label>
           </b-col>
           <b-col sm="9">
             <b-form-input id="iFoodName" v-model="foodName" placeholder="Kérem az étel nevét!" type="text"></b-form-input>

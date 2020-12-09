@@ -5,8 +5,8 @@
       <div class="container-fluid h-50">
         <div class="row h-50 align-items-center">
           <div class="col-12 text-center">
-            <h1>Csudijó Étterem</h1>
-            <p class="motto">Ahol az ízek életre kelnek</p>
+            <h1>Suzuki Márkakereskedés</h1>
+            <p class="motto">Ahol az autók életre kelnek</p>
           </div>
         </div>
       </div>

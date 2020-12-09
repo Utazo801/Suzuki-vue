@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Legnépszerűbb étel az étlapunkról a szavazatok szerint:</h2>
+    <h2>Legnépszerűbb autó a választékunkból a szavazatok szerint:</h2>
     <p>{{ topFoods }}</p>
   </div>
 </template>
