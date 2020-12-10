@@ -1,5 +1,8 @@
 <template>
-  <div>ZA WARUDO</div>
+  <div>
+    ZA WARUDO
+    <p>TESTING TESTING</p>
+  </div>
 </template>
 
 <script lang="ts">
