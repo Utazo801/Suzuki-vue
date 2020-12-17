@@ -1,5 +1,9 @@
-JedlikVenomTsBackend és JedlikVenomTsFrontend
+Suzuki Márkakereskedés weboldal Frontend és Backend
 =============================================
+Készítették: 
+Fabry László (https://github.com/fabrylaszlo)
+Bognár Áron (https://github.com/bognararon)
+Szabó Bence (https://github.com/Utazo801)
 
 Projektekben használt technológiák / megoldások:
 =================================================
