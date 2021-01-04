@@ -7,22 +7,30 @@ const csudijoSchemaOptions: mongoose.SchemaOptions = {
 
 export const csudijoSchema = new mongoose.Schema(
   {
-    carName: {
+    CarName: {
       default: "Kicsi kocsi Suzuki",
-      required: "Kérem adjon meg egy auto nevet!",
       type: String,
       unique: true
     },
-    numberOfVote: {
-      default: 0,
-      min: 0,
-      type: Number,
-      get: (v: number) => Math.round(v),
-      set: (v: number) => Math.round(v)
+    Price: {
+      default: 1000000,
+      type: Number
     },
-    createdDate: {
-      default: Date.now,
-      type: Date
+    AvailableColors: {
+      default: "Red, Blue, Green",
+      type: String
+    },
+    description: {
+      default: "Jó autó",
+      type: String
+    },
+    BHP: {
+      default: 150,
+      type: Number
+    },
+    Color: {
+      default: "Rainbow",
+      type: String
     }
   },
   csudijoSchemaOptions

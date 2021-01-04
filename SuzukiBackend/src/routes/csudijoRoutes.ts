@@ -11,18 +11,18 @@ export class CsudijoRoutes {
       .get((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.getAllFoods)
+      }, this.csudijoController.getAllCars)
 
       // POST endpoint
       .post((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.addNewFood);
+      }, this.csudijoController.addNewCar);
 
     app.route("/csudijobest").get((req: Request, res: Response, next: NextFunction) => {
       console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
       next();
-    }, this.csudijoController.getTopFoods);
+    }, this.csudijoController.getTopCars);
 
     // Contact detail
     app
@@ -31,16 +31,16 @@ export class CsudijoRoutes {
       .get((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.getFoodWithID)
+      }, this.csudijoController.getCarWithID)
 
       .put((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.updateFood)
+      }, this.csudijoController.updateCar)
 
       .delete((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.deleteFood);
+      }, this.csudijoController.deleteCar);
   }
 }
