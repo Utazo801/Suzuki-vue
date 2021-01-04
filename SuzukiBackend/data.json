@@ -41,7 +41,7 @@
   "_id": {
     "$oid": "5db086e3a46e4407bcdf9cda"
   },
-  "foodName": "Suzuki Sport",
+  "CarName": "Suzuki Sport",
   "created_date": {
     "$date": "2019-10-23T16:59:15.591Z"
   },
@@ -54,7 +54,7 @@
   "_id": {
     "$oid": "5db085a5a46e4407bcdf9cd8"
   },
-  "foodName": "Suzukis Ignis",
+  "CarName": "Suzukis Ignis",
   "created_date": {
     "$date": "2019-10-23T16:53:57.674Z"
   },
