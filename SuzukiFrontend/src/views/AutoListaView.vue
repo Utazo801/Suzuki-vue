@@ -12,8 +12,9 @@
     </header>
     <div class="conatiner">
       <h3>Állítsa össze igényei szerint autóját</h3>
-      <AutolistaComp />
     </div>
+    <AutolistaComp />
+    <!--Nem akarja betölteni a komponenst, pedig úgy csinálom, ahogy a template kódja is működik--->
   </div>
 </template>
 
