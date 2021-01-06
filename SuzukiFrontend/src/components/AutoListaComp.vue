@@ -5,7 +5,7 @@
         <b-col class="Param">
           <p>Kategória:</p>
           <b-form-select v-model="selected">
-            <option disabled value="">Válasszon egy kategóriát</option>
+            <option value="">Válasszon egy kategóriát</option>
           </b-form-select>
         </b-col>
       </b-row>
@@ -13,7 +13,7 @@
         <b-col class="Param">
           <p>Teljesítmény:</p>
           <b-form-select v-model="selected">
-            <option disabled value="">Válasszon egy teljesítményt</option>
+            <option value="">Válasszon egy teljesítményt</option>
           </b-form-select>
         </b-col>
       </b-row>
@@ -21,28 +21,36 @@
         <b-col class="Param">
           <p>Szín:</p>
           <b-form-select v-model="selected">
-            <option disabled value="">Válasszon egy színt</option>
+            <option value="">Válasszon egy színt</option>
           </b-form-select>
         </b-col>
       </b-row>
       <b-row>
         <b-col class="Param">
           <p>Ár:</p>
-          <p id="minPrice">-1</p>
-          <p id="maxPrice">42</p>
-          <b-form-input type="range"></b-form-input>
+          <span>Minimum</span><b-form-input id="minPrice" value="-1"></b-form-input> <span>Maximum</span
+          ><b-form-input id="maxPrice" value="42"></b-form-input>
+          <b-form-input v-model="rangeValue" type="range"></b-form-input>
+          <span v-text="SeekedPrice"></span>
         </b-col>
       </b-row>
       <br />
       <b-button @click="SearchCar()">Keress</b-button>
     </b-container>
+    <AutoEredmenyComp />
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import AutoEredmenyComp from "@/components/AutoEredmenyComp.vue";
+import { component } from "vue/types/umd";
 
-@Component
+@Component({
+  components: {
+    AutoEredmenyComp
+  }
+})
 export default class AutoListaComp extends Vue {
   // Példa komponensnek átadott (input) adatra:
   // ==========================================
@@ -61,5 +69,11 @@ export default class AutoListaComp extends Vue {
 }
 .Param {
   float: left;
+}
+#minPrice {
+  width: 10% !important;
+}
+#maxPrice {
+  width: 10% !important;
 }
 </style>
