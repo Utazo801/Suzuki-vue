@@ -19,6 +19,7 @@
         img-src="https://upload.wikimedia.org/wikipedia/commons/f/fd/2016_Suzuki_Vitara_SZ5_Rugged_1.6.jpg"
       ></b-carousel-slide>
     </b-carousel>
+    <br />
   </div>
 </template>
 
