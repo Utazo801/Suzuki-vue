@@ -1,1 +1,1 @@
-"C:\Program Files\MongoDB\Server\4.2\bin\mongoimport.exe" -h localhost -d CRMdb -c CarCollection --drop --file data.json
+"C:\Program Files\MongoDB\Server\4.4\bin\mongoimport.exe" -h localhost -d CRMdb -c CarCollection --drop --file data.json
