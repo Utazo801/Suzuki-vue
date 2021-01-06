@@ -55,7 +55,7 @@ export class CsudijoController {
   }
 
   public getCarWithID(req: Request, res: Response): void {
-    mongooseCsudijo.findById(req.params.carId, (err, car) => {
+    mongooseCsudijo.findById(req.params.carId, (err: any, car: any) => {
       if (err) {
         res.send(err);
       } else {
@@ -79,7 +79,7 @@ export class CsudijoController {
   }
 
   public deleteCar(req: Request, res: Response): void {
-    mongooseCsudijo.deleteOne({ _id: req.params.carId }, err => {
+    mongooseCsudijo.deleteOne({ _id: req.params.carId }, (err: any) => {
       if (err) {
         res.send(err);
       } else {
