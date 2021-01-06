@@ -1,7 +1,15 @@
 <template>
   <div>
-    <b-carousel>
-      <b-carousel-slide v-for="i in 4" id="img" :key="i" :src="imageURLs[i]"></b-carousel-slide>
+    <b-carousel id="carousel" indicators controls img-width="1020" img-height="480">
+      <b-carousel-slide
+        img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg/1920px-2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg"
+      ></b-carousel-slide>
+      <b-carousel-slide
+        img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg/300px-2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg"
+      ></b-carousel-slide>
+      <b-carousel-slide img-src="https://auto.suzuki.hu/swiftsport/assets/img/asvanyszurke@2x.webp"></b-carousel-slide>
+      <b-carousel-slide img-src="https://ipravda.sk/res/2020/07/15/thumbs/suzuki-swift-2021_04-nestandard1.jpg"></b-carousel-slide>
+      <b-carousel-slide img-src="https://upload.wikimedia.org/wikipedia/commons/f/fd/2016_Suzuki_Vitara_SZ5_Rugged_1.6.jpg"></b-carousel-slide>
     </b-carousel>
   </div>
 </template>
@@ -12,17 +20,23 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class AutoSlideComp extends Vue {
   private imageURLs: string[] = [
-    "../assets/images/Suzukik/suzuki_ignis.jpg",
-    "../assets/images/Suzukik/suzuki_scross_sx4.jpg",
-    "../assets/images/Suzukik/suzuki_sport.jpg",
-    "../assets/images/Suzukik/suzuki_swift.jpg",
-    "../assets/images/Suzukik/suzuki_vitara.jpg"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg/1920px-2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg/300px-2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg",
+    "https://auto.suzuki.hu/swiftsport/assets/img/asvanyszurke@2x.webp",
+    "https://ipravda.sk/res/2020/07/15/thumbs/suzuki-swift-2021_04-nestandard1.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/fd/2016_Suzuki_Vitara_SZ5_Rugged_1.6.jpg"
   ];
 }
 </script>
 
 <style scoped>
+#carousel {
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
 #img {
-  max-width: 40%;
+  max-width: 50%;
+  max-height: 80%;
 }
 </style>
