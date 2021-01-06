@@ -2,7 +2,7 @@ import axios, { AxiosResponse, AxiosError, AxiosRequestConfig } from "axios";
 import { Action, Module, Mutation, VuexModule } from "vuex-module-decorators";
 
 @Module
-export default class CsudijoModule extends VuexModule {  
+export default class CsudijoModule extends VuexModule {
   private __showEditForm: boolean = false;
   private __editedFood: any;
   private __currentPage: number = 1; // aktuálisan megjelenő oldal sorszáma
@@ -38,10 +38,10 @@ export default class CsudijoModule extends VuexModule {
   @Action
   public async getCars(): Promise<any> {
     axios
-      .get("/csudijo", this.config)
+      .get("/CarCollection", this.config)
       .then((res: AxiosResponse) => {
         const data: any = res.data;
-        if (data) {          
+        if (data) {
           this.context.commit("mutateCars", data);
           // További akciók hívására van lehetőség (dispatch()):
           this.context.dispatch("getTopPriceList");
@@ -73,8 +73,7 @@ export default class CsudijoModule extends VuexModule {
         }
       })
       .catch((ex: AxiosError) => alert(ex.message));
-  } 
-  
+  }
 
   @Mutation
   private mutateCars(data: any): void {
@@ -84,7 +83,7 @@ export default class CsudijoModule extends VuexModule {
   @Mutation
   private mutateTopPrice(data: any): void {
     this._topPrice = [];
-    if (!data.error) {     
+    if (!data.error) {
       this._topPrice = data.map((a: any) => a.carName);
     }
   }
