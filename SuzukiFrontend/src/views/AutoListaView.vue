@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="https://www.cleanpng.com/png-suzuki-sx4-logo-car-suzuki-jimny-1975847/" alt="Logo" />
+    <img id="logo" src="../assets/images/logo.png" alt="Logo" />
     <br />
     <span>Ahol az autók életre kelnek</span>
     <AutoSlideComp />
@@ -22,4 +22,8 @@ import { Component, Vue } from "vue-property-decorator";
 export default class CsudijoView extends Vue {}
 </script>
 
-<style scoped></style>
+<style scoped>
+#logo {
+  max-width: 10%;
+}
+</style>

@@ -7,11 +7,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item :to="{ name: 'csudijo' }">Csudijo</b-nav-item>
           <b-nav-item :to="{ name: 'auto' }">Autó</b-nav-item>
-          <b-nav-item :to="{ name: 'vuexDemo' }">VuexDemo</b-nav-item>
-          <b-nav-item :to="{ name: 'home' }">Home</b-nav-item>
-          <b-nav-item :to="{ name: 'about' }">About</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
