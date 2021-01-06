@@ -62,7 +62,7 @@ export default class CsudijoModule extends VuexModule {
   }
 
   @Action
-  public async addNewFood(newCar: any): Promise<any> {
+  public async addNewCar(newCar: any): Promise<any> {
     axios
       .post("/csudijo", newCar, this.config)
       .then((res: AxiosResponse) => {
@@ -84,10 +84,7 @@ export default class CsudijoModule extends VuexModule {
   @Mutation
   private mutateTopPrice(data: any): void {
     this._topPrice = [];
-    if (!data.error) {
-      // 9. feladat:
-      // Itt még "átjön" a "top" ételek minden adata, ami felesleges, mert
-      // csak a nevükre van szükségünk
+    if (!data.error) {     
       this._topPrice = data.map((a: any) => a.carName);
     }
   }
