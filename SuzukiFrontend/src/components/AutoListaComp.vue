@@ -37,7 +37,7 @@
       <br />
       <b-button @click="SearchCar()">Keress</b-button>
     </b-container>
-    <AutoEredmenyComp />
+    <AutoEredmenyComp v-if="startedSearch" />
   </section>
 </template>
 
@@ -55,8 +55,10 @@ export default class AutoListaComp extends Vue {
   // Példa komponensnek átadott (input) adatra:
   // ==========================================
   @Prop() private msg!: string;
+  private startedSearch: boolean = false;
 
   public SearchCar() {
+    this.startedSearch = true;
     alert("Siker");
   }
 }

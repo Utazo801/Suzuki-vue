@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div><p>Itt egy autó</p></div>
 </template>
 
 <script lang="ts">
