@@ -1,28 +1,40 @@
 <template>
   <section class="AutoSzuro">
-    <b-container fluid class="Kereses">
+    <b-container class="Kereses">
       <b-row>
         <b-col class="Param">
           <p>Kategória:</p>
-          <select></select>
+          <b-form-select v-model="selected">
+            <option disabled value="">Válasszon egy kategóriát</option>
+          </b-form-select>
         </b-col>
-        <br />
+      </b-row>
+      <b-row>
         <b-col class="Param">
           <p>Teljesítmény:</p>
-          <select></select>
+          <b-form-select v-model="selected">
+            <option disabled value="">Válasszon egy teljesítményt</option>
+          </b-form-select>
         </b-col>
-        <br />
+      </b-row>
+      <b-row>
         <b-col class="Param">
           <p>Szín:</p>
-          <select></select>
+          <b-form-select v-model="selected">
+            <option disabled value="">Válasszon egy színt</option>
+          </b-form-select>
         </b-col>
-        <br />
+      </b-row>
+      <b-row>
         <b-col class="Param">
           <p>Ár:</p>
-          <select></select>
+          <p id="minPrice">-1</p>
+          <p id="maxPrice">42</p>
+          <b-form-input type="range"></b-form-input>
         </b-col>
-        <b-button>Keress</b-button>
       </b-row>
+      <br />
+      <b-button @click="SearchCar()">Keress</b-button>
     </b-container>
   </section>
 </template>
@@ -35,6 +47,19 @@ export default class AutoListaComp extends Vue {
   // Példa komponensnek átadott (input) adatra:
   // ==========================================
   @Prop() private msg!: string;
+
+  public SearchCar() {
+    alert("Siker");
+  }
 }
 </script>
-<style scoped></style>
+<style scoped>
+.Kereses {
+  text-align: left;
+  max-width: 50%;
+  margin: 0px;
+}
+.Param {
+  float: left;
+}
+</style>
