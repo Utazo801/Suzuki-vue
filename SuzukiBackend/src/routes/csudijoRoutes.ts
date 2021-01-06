@@ -5,7 +5,7 @@ export class CsudijoRoutes {
   public csudijoController: CsudijoController = new CsudijoController();
 
   public routes(app: any): void {
-    // Foods
+    // Cars
     app
       .route("/csudijo")
       .get((req: Request, res: Response, next: NextFunction) => {
