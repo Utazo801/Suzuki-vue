@@ -18,8 +18,8 @@
       </b-form-select>
       <hr />
       <label for="price">Ár</label>
-      <b-form-input id="price" v-model="priceRange" type="range" min="0" max="5000000" step="100000" />
-      <div>{{ priceRange }}</div>
+      <b-form-input id="price" v-model="priceRange" lazy type="range" min="0" max="5000000" step="100000" />
+      <div>{{ priceRange }} Ft</div>
       <b-button type="button" @click="Search">Keresés</b-button>
     </b-form>
     <AutoEredmenyComp v-if="startedSearch" />
@@ -40,7 +40,7 @@ export default class AutoListaComp extends Vue {
   // Példa komponensnek átadott (input) adatra:
   // ==========================================
   @Prop() private msg!: string;
-  private priceRange: number;
+  private priceRange: string = "";
   private startedSearch: boolean = false;
   public mounted() {
     this.$store.dispatch("getCars");
