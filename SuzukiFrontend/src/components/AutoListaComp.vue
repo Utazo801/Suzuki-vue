@@ -4,17 +4,17 @@
       <b-form>
         <label for="category">Kategória</label>
         <b-form-select id="category">
-          <b-select-option v-for="car in $store.getters.uniqueNames" :key="car.id" :value="car.CarName">{{ car }}</b-select-option>
+          <b-select-option v-for="car in $store.getters.uniqueNames" :key="car.id" :value="car">{{ car }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="color">Szín</label>
         <b-form-select id="color">
-          <b-select-option v-for="color in $store.getters.uniqueColors" :key="color.id" :value="color.color">{{ color }}</b-select-option>
+          <b-select-option v-for="color in $store.getters.uniqueColors" :key="color.id" :value="color">{{ color }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="BHP">Lóerő</label>
         <b-form-select id="BHP">
-          <b-select-option v-for="car in $store.getters.uniqueBHP" :key="car.id" :value="car.BHP">{{ car }}</b-select-option>
+          <b-select-option v-for="bhp in $store.getters.uniqueBHP" :key="bhp.id" :value="bhp">{{ bhp }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="price">Ár</label>

@@ -39,9 +39,6 @@ export default class CarModule extends VuexModule {
         if (data) {
           console.log(res.data);
           this.context.commit("mutateCars", data);
-          this.context.commit("mutateNames", data);
-          this.context.commit("mutateColors", data);
-          this.context.commit("mutateBHP", data);
         }
       })
       .catch((ex: AxiosError) => alert(ex.message));
@@ -50,25 +47,18 @@ export default class CarModule extends VuexModule {
   @Mutation
   private mutateCars(data: any): void {
     this._cars = data;
-
-    console.log(this._uniqueColors);
-  }
-  @Mutation
-  private mutateNames(data: any): void {
     data.forEach((e: { CarName: string }) => {
       this._uniqueNames.add(e.CarName);
     });
-  }
-  @Mutation
-  private mutateColors(data: any): void {
     data.forEach((e: { Color: string }) => {
       this._uniqueColors.add(e.Color);
     });
-  }
-  @Mutation
-  private mutateBHP(data: any): void {
     data.forEach((e: { BHP: string }) => {
       this._uniqueBHP.add(e.BHP);
     });
+    console.log(this._uniqueNames);
+
+    console.log(this._uniqueColors);
+    console.log(this._uniqueBHP);
   }
 }
