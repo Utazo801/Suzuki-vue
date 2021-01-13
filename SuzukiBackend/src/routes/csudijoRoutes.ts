@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { CsudijoController } from "../controllers/csudijoController";
+import { CsudijoController } from "../controllers/CarController";
 
 export class CsudijoRoutes {
   public csudijoController: CsudijoController = new CsudijoController();
