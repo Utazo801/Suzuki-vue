@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import HomeView from "./views/HomeView.vue";
 import AutoListaView from "./views/AutoListaView.vue";
+import Keszitok from "./views/Keszitok.vue";
 
 Vue.use(Router);
 
@@ -18,6 +19,11 @@ export default new Router({
       component: AutoListaView,
       name: "auto",
       path: "/"
+    },
+    {
+      component: Keszitok,
+      name: "keszitok",
+      path: "/keszitok"
     },
     {
       // route level code-splitting

@@ -8,6 +8,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item :to="{ name: 'auto' }">Autó</b-nav-item>
+          <b-nav-item :to="{ name: 'keszitok' }">Készítők</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
