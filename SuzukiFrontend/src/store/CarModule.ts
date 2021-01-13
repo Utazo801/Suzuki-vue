@@ -12,12 +12,21 @@ export default class CarModule extends VuexModule {
   //State
   private _cars: any = [];
   private _uniqueNames: Set<string> = new Set<string>();
+  private _uniqueColors: Set<string> = new Set<string>();
+  private _uniqueBHP: Set<string> = new Set<string>();
+
   //Getters
   get cars(): any {
     return this._cars;
   }
   get uniqueNames(): any {
     return this._uniqueNames;
+  }
+  get uniqueColors(): any {
+    return this._uniqueColors;
+  }
+  get uniqueBHP(): any {
+    return this._uniqueBHP;
   }
   //Actions
   //Autók lehívása
@@ -30,6 +39,9 @@ export default class CarModule extends VuexModule {
         if (data) {
           console.log(res.data);
           this.context.commit("mutateCars", data);
+          this.context.commit("mutateNames", data);
+          this.context.commit("mutateColors", data);
+          this.context.commit("mutateBHP", data);
         }
       })
       .catch((ex: AxiosError) => alert(ex.message));
@@ -38,9 +50,25 @@ export default class CarModule extends VuexModule {
   @Mutation
   private mutateCars(data: any): void {
     this._cars = data;
+
+    console.log(this._uniqueColors);
+  }
+  @Mutation
+  private mutateNames(data: any): void {
     data.forEach((e: { CarName: string }) => {
       this._uniqueNames.add(e.CarName);
     });
-    console.log(this._uniqueNames);
+  }
+  @Mutation
+  private mutateColors(data: any): void {
+    data.forEach((e: { Color: string }) => {
+      this._uniqueColors.add(e.Color);
+    });
+  }
+  @Mutation
+  private mutateBHP(data: any): void {
+    data.forEach((e: { BHP: string }) => {
+      this._uniqueBHP.add(e.BHP);
+    });
   }
 }

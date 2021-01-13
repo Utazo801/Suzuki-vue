@@ -9,12 +9,12 @@
         <hr />
         <label for="color">Szín</label>
         <b-form-select id="color">
-          <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.Color">{{ car.Color }}</b-select-option>
+          <b-select-option v-for="color in $store.getters.uniqueColors" :key="color.id" :value="color.color">{{ color }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="BHP">Lóerő</label>
         <b-form-select id="BHP">
-          <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.BHP">{{ car.BHP }}</b-select-option>
+          <b-select-option v-for="car in $store.getters.uniqueBHP" :key="car.id" :value="car.BHP">{{ car }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="price">Ár</label>
