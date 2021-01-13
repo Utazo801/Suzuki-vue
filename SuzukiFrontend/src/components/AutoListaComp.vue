@@ -52,7 +52,7 @@ export default class AutoListaComp extends Vue {
 }
 </script>
 <style scoped>
-.Suzuki {
+.AutoSzuro {
   display: flex;
   margin: auto;
   align-items: center;
