@@ -20,7 +20,7 @@ export default class CarModule extends VuexModule {
   @Action
   private async getCars(): Promise<any> {
     axios
-      .get("/csudijo", this.config)
+      .get("/cars", this.config)
       .then((res: AxiosResponse) => {
         const data: any = res.data;
         if (data) {

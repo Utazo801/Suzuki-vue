@@ -65,7 +65,7 @@ class App {
     // Doc:
     // https://mongoosejs.com/docs/connections.html
 
-    const options: mongoose.ConnectionOptions = {
+    const options: mongoose.ConnectOptions = {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,

@@ -1,9 +1,7 @@
 <template>
   <div class="Suzuki">
     <section class="AutoSzuro"></section>
-    <b-form v-if="show" @submit="onSubmit" @reset="onReset">
-      <b-form-group id="CategorySelect" label="Cars:" label-for="category"><b-form-select id="category" v-model=""></b-form-select></b-form-group>
-    </b-form>
+    <b-form-select id="category" :options="$store.getters.cars" :value="$store.getters.cars.CarName"></b-form-select>
     <AutoEredmenyComp v-if="startedSearch" />
   </div>
 </template>
@@ -23,7 +21,9 @@ export default class AutoListaComp extends Vue {
   // ==========================================
   @Prop() private msg!: string;
   private startedSearch: boolean = false;
-
+  public mounted() {
+    this.$store.dispatch("getCars");
+  }
   public SearchCar() {
     this.startedSearch = true;
     alert("Siker");
