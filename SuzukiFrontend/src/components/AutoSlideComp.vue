@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-carousel id="carousel" indicators controls img-width="1020" img-height="480">
+  <div class="Slider">
+    <b-carousel id="carousel" indicators controls img-width="720" img-height="480">
       <b-carousel-slide
         caption="Suzuki Ignis"
         img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg/1920px-2018_Suzuki_Ignis_SZ5_SHVS_Allgrip_1.2_Front.jpg"
@@ -39,10 +39,16 @@ export default class AutoSlideComp extends Vue {
 </script>
 
 <style scoped>
+.Slider {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
 #carousel {
   margin: auto;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 50%;
+  max-height: 50%;
 }
 #img {
   max-width: 50%;
