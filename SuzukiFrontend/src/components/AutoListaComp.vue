@@ -1,7 +1,19 @@
 <template>
   <div class="Suzuki">
     <section class="AutoSzuro"></section>
-    <b-form-select id="category" :options="$store.getters.cars" :value="$store.getters.cars.CarName"></b-form-select>
+    <b-form-select id="category">
+      <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.CarName">{{ car.CarName }}</b-select-option>
+    </b-form-select>
+    <b-form-select id="Color">
+      <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.Color">{{ car.Color }}</b-select-option>
+    </b-form-select>
+    <b-form-select id="BHP">
+      <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.BHP">{{ car.BHP }}</b-select-option>
+    </b-form-select>
+    <b-form-select id="BHP">
+      <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.BHP">{{ car.BHP }}</b-select-option>
+    </b-form-select>
+    <b-input type="range" />
     <AutoEredmenyComp v-if="startedSearch" />
   </div>
 </template>
