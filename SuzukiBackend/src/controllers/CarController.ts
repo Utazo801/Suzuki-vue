@@ -36,22 +36,20 @@ export class CarController {
           res.send(err);
         } else {
           res.json(car);
-          // if (car.length > 0) {
+        }
+      });
+  }
 
-          //   const max = (car[0] as any).numberOfVote;
-          //   mongooseCars.find({ numberOfVote: max }, (error, cars) => {
-          //     if (error) {
-          //       res.send(error);
-          //     } else {
-          //       // 9. feladat:
-          //       // Az ételek összes adata átkerül, nekünk elegendőek az ételek nevei
-          //       res.json(cars);
-          //     }
-          //   });
-          // } else {
-          //   // Ha még nincs étel a kollekcióban:
-          //   res.json({ error: "No car!" });
-          // }
+  public getCheapestCar(req: Request, res: Response): void {
+    mongooseCars
+      .find({})
+      .sort({ Price: "asc" })
+      .limit(1)
+      .exec((err, car) => {
+        if (err) {
+          res.send(err);
+        } else {
+          res.json(car);
         }
       });
   }

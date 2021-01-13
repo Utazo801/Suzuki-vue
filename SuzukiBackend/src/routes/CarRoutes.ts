@@ -24,6 +24,11 @@ export class CarRoutes {
       next();
     }, this.CarController.getMostExpensiveCar);
 
+    app.route("/cheapest").get((req: Request, res: Response, next: NextFunction) => {
+      console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
+      next();
+    }, this.CarController.getCheapestCar);
+
     // Contact detail
     app
       .route("/cars/:carId")
