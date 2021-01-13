@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import { Request, Response } from "express";
-import { csudijoSchema } from "../models/csudijoModel";
+import { CarSchema } from "../models/CarModel";
 
-const mongooseCsudijo = mongoose.model("Csudijo", csudijoSchema);
+const mongooseCsudijo = mongoose.model("Csudijo", CarSchema);
 
 export class CsudijoController {
   public addNewCar(req: Request, res: Response): void {

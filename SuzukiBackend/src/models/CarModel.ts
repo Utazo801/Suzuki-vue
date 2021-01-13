@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
-const csudijoSchemaOptions: mongoose.SchemaOptions = {
+const CarSchemaOptions: mongoose.SchemaOptions = {
   collection: "CarCollection",
   versionKey: false
 };
 
-export const csudijoSchema = new mongoose.Schema(
+export const CarSchema = new mongoose.Schema(
   {
     CarName: {
       default: "Kicsi kocsi Suzuki",
@@ -33,5 +33,5 @@ export const csudijoSchema = new mongoose.Schema(
       type: String
     }
   },
-  csudijoSchemaOptions
+  CarSchemaOptions
 );
