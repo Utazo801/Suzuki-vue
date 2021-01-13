@@ -1,7 +1,7 @@
 <template>
   <div id="content">
     <b-navbar toggleable="sm" type="dark" variant="info" fixed="top">
-      <b-navbar-brand href="#">Jedlik</b-navbar-brand>
+      <b-navbar-brand href="#">Suzuki</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 

@@ -1,44 +1,11 @@
 <template>
-  <section class="AutoSzuro">
-    <b-container class="Kereses">
-      <b-row>
-        <b-col class="Param">
-          <p>Kategória:</p>
-          <b-form-select v-model="selected">
-            <option value="">Válasszon egy kategóriát</option>
-          </b-form-select>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col class="Param">
-          <p>Teljesítmény:</p>
-          <b-form-select v-model="selected">
-            <option value="">Válasszon egy teljesítményt</option>
-          </b-form-select>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col class="Param">
-          <p>Szín:</p>
-          <b-form-select v-model="selected">
-            <option value="">Válasszon egy színt</option>
-          </b-form-select>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col class="Param">
-          <p>Ár:</p>
-          <span>Minimum</span><b-form-input id="minPrice" value="-1"></b-form-input> <span>Maximum</span
-          ><b-form-input id="maxPrice" value="42"></b-form-input>
-          <b-form-input v-model="rangeValue" type="range"></b-form-input>
-          <span v-text="SeekedPrice"></span>
-        </b-col>
-      </b-row>
-      <br />
-      <b-button @click="SearchCar()">Keress</b-button>
-    </b-container>
+  <div class="Suzuki">
+    <section class="AutoSzuro"></section>
+    <b-form v-if="show" @submit="onSubmit" @reset="onReset">
+      <b-form-group id="CategorySelect" label="Cars:" label-for="category"><b-form-select id="category" v-model=""></b-form-select></b-form-group>
+    </b-form>
     <AutoEredmenyComp v-if="startedSearch" />
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
