@@ -7,7 +7,7 @@
       ></b-carousel-slide>
       <b-carousel-slide
         caption="Suzuki SX4 S-Cross"
-        img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg/300px-2018_Suzuki_SX4_S-Cross_SZ5_DDIS_Allgrip_1.6_Front.jpg"
+        img-src="https://www.suzuki.sk/automobily/sites/default/files/images_model_color/10_cosmic_black_790x427_0.jpg"
       ></b-carousel-slide>
       <b-carousel-slide caption="Suzuki Swift Sport" img-src="https://auto.suzuki.hu/swiftsport/assets/img/asvanyszurke@2x.webp"></b-carousel-slide>
       <b-carousel-slide

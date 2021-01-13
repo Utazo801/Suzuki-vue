@@ -5,7 +5,9 @@
       <b-card-text>Lóerő: {{ car.BHP }}</b-card-text>
       <b-card-text>Elérherő színek: {{ car.AvailableColors }}</b-card-text>
       <b-card-text>Ár {{ car.Price }} Ft</b-card-text>
-      <b-card-text>Lóerő {{ car.description }}</b-card-text>
+      <b-card-text>
+        <i>{{ car.description }}</i></b-card-text
+      >
     </b-card>
   </div>
 </template>
