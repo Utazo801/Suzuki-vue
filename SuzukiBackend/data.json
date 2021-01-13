@@ -8,7 +8,7 @@
   },
   "CarName": "Suzuki Swift",
   "Price": 2600000,
-  "AvailableColors": "Red, Blue, Green, Mindight Green",
+  "AvailableColors": "Red, Blue, Green, Midnight Green",
   "Color": "Red",
   "BHP": 150
 },{
@@ -22,7 +22,7 @@
   "CarName": "Suzuki Scross SX4",
   "Price": 5000000,
   "BHP": 300,
-  "AvailableColors": "Red, Blue",
+  "AvailableColors": "Red, Blue, Green",
   "Color": "Blue"
 },{
   "_id": {
@@ -62,5 +62,5 @@
   "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
   "BHP": 140,
   "Color": "Grey",
-  "Price": 20000000
+  "Price": 2000000
 }]
