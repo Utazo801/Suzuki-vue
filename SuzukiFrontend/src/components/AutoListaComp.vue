@@ -4,7 +4,7 @@
       <b-form>
         <label for="category">Kategória</label>
         <b-form-select id="category">
-          <b-select-option v-for="car in $store.getters.cars" :key="car.id" :value="car.CarName">{{ car.CarName }}</b-select-option>
+          <b-select-option v-for="car in $store.getters.uniqueNames" :key="car.id" :value="car.CarName">{{ car }}</b-select-option>
         </b-form-select>
         <hr />
         <label for="color">Szín</label>

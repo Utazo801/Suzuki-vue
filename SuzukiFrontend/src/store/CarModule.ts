@@ -11,9 +11,13 @@ export default class CarModule extends VuexModule {
   };
   //State
   private _cars: any = [];
+  private _uniqueNames: Set<string> = new Set<string>();
   //Getters
   get cars(): any {
     return this._cars;
+  }
+  get uniqueNames(): any {
+    return this._uniqueNames;
   }
   //Actions
   //Autók lehívása
@@ -34,5 +38,9 @@ export default class CarModule extends VuexModule {
   @Mutation
   private mutateCars(data: any): void {
     this._cars = data;
+    data.forEach((e: { CarName: string }) => {
+      this._uniqueNames.add(e.CarName);
+    });
+    console.log(this._uniqueNames);
   }
 }

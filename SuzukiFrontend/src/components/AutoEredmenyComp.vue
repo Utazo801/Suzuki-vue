@@ -33,5 +33,6 @@ export default class AutoEredmenyComp extends Vue {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 </style>
