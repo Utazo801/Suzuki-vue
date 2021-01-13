@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "5db07d03c461ed2d707f6ee6"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2600000,
+  "AvailableColors": "Red, Blue, Green, Mindight Green",
+  "Color": "Red",
+  "BHP": 150
+},{
+  "_id": {
+    "$oid": "5db07b29c461ed2d707f6ee5"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 5000000,
+  "BHP": 300,
+  "AvailableColors": "Red, Blue",
+  "Color": "Blue"
+},{
+  "_id": {
+    "$oid": "5db07f956059954784f8df79"
+  },
+  "created_date": {
+    "$date": "2019-10-23T16:28:05.416Z"
+  },
+  "description": "Szabadság újragondolva",
+  "CarName": "Suzuki Vitara",
+  "Price": 3600000,
+  "AvailableColors": "Yellow, Red, Green",
+  "BHP": 170,
+  "Color": "Yellow"
+},{
+  "_id": {
+    "$oid": "5db086e3a46e4407bcdf9cda"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 250,
+  "Color": "Yellow",
+  "Price": 4500000
+},{
+  "_id": {
+    "$oid": "5db085a5a46e4407bcdf9cd8"
+  },
+  "CarName": "Suzukis Ignis",
+  "created_date": {
+    "$date": "2019-10-23T16:53:57.674Z"
+  },
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 140,
+  "Color": "Grey",
+  "Price": 20000000
+}]
