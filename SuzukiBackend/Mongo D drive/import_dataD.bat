@@ -1,1 +1,1 @@
-"D:\Programok\MongoDB\Tools\100\bin\mongoimport.exe" -h localhost -d CRMdb -c CarCollection --drop --file data.json
+"D:\Programok\MongoDB\Tools\100\bin\mongoimport.exe" -h localhost -d CRMdb -c CarCollection --drop --jsonArray data.json
