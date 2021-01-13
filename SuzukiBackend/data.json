@@ -1,16 +1,16 @@
 [{
   "_id": {
-    "$oid": "5db07d03c461ed2d707f6ee6"
+    "$oid": "5db085a5a46e4407bcdf9cd8"
   },
-  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "CarName": "Suzukis Ignis",
   "created_date": {
-    "$date": "2019-10-23T16:17:07.806Z"
+    "$date": "2019-10-23T16:53:57.674Z"
   },
-  "CarName": "Suzuki Swift",
-  "Price": 2600000,
-  "AvailableColors": "Red, Blue, Green, Midnight Green",
-  "Color": "Red",
-  "BHP": 150
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 140,
+  "Color": "Grey",
+  "Price": 2000000
 },{
   "_id": {
     "$oid": "5db07b29c461ed2d707f6ee5"
@@ -22,21 +22,21 @@
   "CarName": "Suzuki Scross SX4",
   "Price": 5000000,
   "BHP": 300,
-  "AvailableColors": "Red, Blue, Green",
+  "AvailableColors": "Red, Blue, Brown, Yellow",
   "Color": "Blue"
 },{
   "_id": {
-    "$oid": "5db07f956059954784f8df79"
+    "$oid": "5db07d03c461ed2d707f6ee6"
   },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
   "created_date": {
-    "$date": "2019-10-23T16:28:05.416Z"
+    "$date": "2019-10-23T16:17:07.806Z"
   },
-  "description": "Szabadság újragondolva",
-  "CarName": "Suzuki Vitara",
-  "Price": 3600000,
-  "AvailableColors": "Yellow, Red, Green",
-  "BHP": 170,
-  "Color": "Yellow"
+  "CarName": "Suzuki Swift",
+  "Price": 2600000,
+  "AvailableColors": "Red, Blue, Green, Brown,Midnight Green",
+  "Color": "Red",
+  "BHP": 150
 },{
   "_id": {
     "$oid": "5db086e3a46e4407bcdf9cda"
@@ -52,7 +52,59 @@
   "Price": 4500000
 },{
   "_id": {
-    "$oid": "5db085a5a46e4407bcdf9cd8"
+    "$oid": "5db07f956059954784f8df79"
+  },
+  "created_date": {
+    "$date": "2019-10-23T16:28:05.416Z"
+  },
+  "description": "Szabadság újragondolva",
+  "CarName": "Suzuki Vitara",
+  "Price": 3600000,
+  "AvailableColors": "Yellow, Red, Green",
+  "BHP": 170,
+  "Color": "Yellow"
+},{
+  "_id": {
+    "$oid": "5fff1d868c27e64e380c6f5b"
+  },
+  "CarName": "Suzukis Ignis",
+  "created_date": {
+    "$date": "2019-10-23T16:53:57.674Z"
+  },
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 120,
+  "Color": "Red",
+  "Price": 1800000
+},{
+  "_id": {
+    "$oid": "5fff1da48c27e64e380c6f5c"
+  },
+  "CarName": "Suzukis Ignis",
+  "created_date": {
+    "$date": "2019-10-23T16:53:57.674Z"
+  },
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 170,
+  "Color": "Orange",
+  "Price": 2000000
+},{
+  "_id": {
+    "$oid": "5fff1dc18c27e64e380c6f5d"
+  },
+  "CarName": "Suzukis Ignis",
+  "created_date": {
+    "$date": "2019-10-23T16:53:57.674Z"
+  },
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 150,
+  "Color": "Blue",
+  "Price": 1800000
+},{
+  "_id": {
+    "$oid": "5fff1dd78c27e64e380c6f5e"
   },
   "CarName": "Suzukis Ignis",
   "created_date": {
@@ -61,6 +113,279 @@
   "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
   "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
   "BHP": 140,
+  "Color": "Yellow",
+  "Price": 1600000
+},{
+  "_id": {
+    "$oid": "5fff1e198c27e64e380c6f5f"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 5000000,
+  "BHP": 270,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Red"
+},{
+  "_id": {
+    "$oid": "5fff1e3c8c27e64e380c6f60"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 4800000,
+  "BHP": 300,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Yellow"
+},{
+  "_id": {
+    "$oid": "5fff1e458c27e64e380c6f61"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 5000000,
+  "BHP": 300,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Brown"
+},{
+  "_id": {
+    "$oid": "5fff1e7d8c27e64e380c6f62"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2500000,
+  "AvailableColors": "Red, Blue, Green,Brown, Midnight Green",
+  "Color": "Blue",
+  "BHP": 170
+},{
+  "_id": {
+    "$oid": "5fff1ea48c27e64e380c6f63"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2800000,
+  "AvailableColors": "Red, Blue, Green, Brown,Midnight Green",
+  "Color": "Midnight Green",
+  "BHP": 200
+},{
+  "_id": {
+    "$oid": "5fff1eaf8c27e64e380c6f64"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2600000,
+  "AvailableColors": "Red, Blue, Green, Brown,Midnight Green",
+  "Color": "Green",
+  "BHP": 150
+},{
+  "_id": {
+    "$oid": "5fff1ed88c27e64e380c6f65"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2400000,
+  "AvailableColors": "Red, Blue, Green, Brown,Midnight Green",
+  "Color": "Brown",
+  "BHP": 150
+},{
+  "_id": {
+    "$oid": "5fff1f048c27e64e380c6f66"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 270,
+  "Color": "Yellow",
+  "Price": 5000000
+},{
+  "_id": {
+    "$oid": "5fff1f128c27e64e380c6f67"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 260,
+  "Color": "Brown",
+  "Price": 4500000
+},{
+  "_id": {
+    "$oid": "5fff1f228c27e64e380c6f68"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 200,
+  "Color": "Red",
+  "Price": 4000000
+},{
+  "_id": {
+    "$oid": "5fff1f308c27e64e380c6f69"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 240,
   "Color": "Grey",
-  "Price": 2000000
+  "Price": 4200000
+},{
+  "_id": {
+    "$oid": "5fff1f548c27e64e380c6f6a"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 260,
+  "Color": "Green",
+  "Price": 4600000
+},{
+  "_id": {
+    "$oid": "5fff1fa78c27e64e380c6f6b"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 5200000,
+  "BHP": 310,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Yellow"
+},{
+  "_id": {
+    "$oid": "5fff1fb68c27e64e380c6f6c"
+  },
+  "created_date": {
+    "$date": "2019-10-23T16:28:05.416Z"
+  },
+  "description": "Szabadság újragondolva",
+  "CarName": "Suzuki Vitara",
+  "Price": 3700000,
+  "AvailableColors": "Yellow, Red, Green",
+  "BHP": 180,
+  "Color": "Red"
+},{
+  "_id": {
+    "$oid": "5fff1fc38c27e64e380c6f6d"
+  },
+  "CarName": "Suzukis Ignis",
+  "created_date": {
+    "$date": "2019-10-23T16:53:57.674Z"
+  },
+  "description": "Az egyéniség új dimenziója! Az Ignis karakteres megjelenése nem marad észrevétlen. Stílusával és egyedi színválasztékával kitűnik a tömegből. Tágas belső terei és biztonsági rendszerei teszik még inkább szerethetővé. Kívül-belül igazi egyéniség!",
+  "AvailableColors": "Red, Grey, Blue, Yellow, Orange",
+  "BHP": 130,
+  "Color": "Orange",
+  "Price": 1900000
+},{
+  "_id": {
+    "$oid": "5fff1fd08c27e64e380c6f6e"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 5100000,
+  "BHP": 280,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Brown"
+},{
+  "_id": {
+    "$oid": "5fff1fe18c27e64e380c6f6f"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2200000,
+  "AvailableColors": "Red, Blue, Green,Brown, Midnight Green",
+  "Color": "Blue",
+  "BHP": 160
+},{
+  "_id": {
+    "$oid": "5fff1ff18c27e64e380c6f70"
+  },
+  "description": "A Te célod, A Te döntésed",
+  "created_date": {
+    "$date": "2019-10-23T16:09:13.216Z"
+  },
+  "CarName": "Suzuki Scross SX4",
+  "Price": 4000000,
+  "BHP": 250,
+  "AvailableColors": "Red, Blue, Brown, Yellow",
+  "Color": "Brown"
+},{
+  "_id": {
+    "$oid": "5fff201a8c27e64e380c6f71"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 220,
+  "Color": "Grey",
+  "Price": 4300000
+},{
+  "_id": {
+    "$oid": "5fff202b8c27e64e380c6f72"
+  },
+  "CarName": "Suzuki Sport",
+  "created_date": {
+    "$date": "2019-10-23T16:59:15.591Z"
+  },
+  "description": "Csípni fogod! Magabiztos kormányzás és könnyed irányíthatóság. Sportos vezetési élmény, biztonság és praktikus teljesítmény. Ez a Swift Sport - egy végletekig izgalmas ferdehátú.",
+  "AvailableColors": "Yellow, Brown, Green, Red, Grey",
+  "BHP": 250,
+  "Color": "Red",
+  "Price": 4300000
+},{
+  "_id": {
+    "$oid": "5fff20478c27e64e380c6f73"
+  },
+  "description": "Feltűnően stílusos! Sportos karakterével, merész vonalaival már messziről kitűnik a városi forgalomban, okos technolúgiai megoldásai pedig minde úton garantálják az önfeledt vezetés émlényét.",
+  "created_date": {
+    "$date": "2019-10-23T16:17:07.806Z"
+  },
+  "CarName": "Suzuki Swift",
+  "Price": 2700000,
+  "AvailableColors": "Red, Blue, Green, Brown, Midnight Green",
+  "Color": "Midnight Green",
+  "BHP": 160
 }]
