@@ -64,27 +64,28 @@ export class CarController {
     });
   }
 
-  // public updateCar(req: Request, res: Response): void {
-  //   const updateOptions: mongoose.QueryFindOneAndUpdateOptions = {
-  //     new: true, // return the modified document
-  //     runValidators: true // runs update validators on this command
-  //   };
-  //   mongooseCsudijo.findOneAndUpdate({ _id: req.params.carId }, req.body, updateOptions, (err, car) => {
-  //     if (err) {
-  //       res.send(err);
-  //     } else {
-  //       res.json(car);
-  //     }
-  //   });
-  // }
+  public updateCar(req: Request, res: Response): void {
+    const updateOptions: mongoose.QueryOptions = {
+      new: true, // return the modified document
+      runValidators: true // runs update validators on this command
+    };
+    mongooseCars.findOneAndUpdate({ _id: req.params.carId }, req.body, updateOptions, (err, car) => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.json(car);
+      }
+    });
+  }
 
-  // public deleteCar(req: Request, res: Response): void {
-  //   mongooseCsudijo.deleteOne({ _id: req.params.carId }, (err: any) => {
-  //     if (err) {
-  //       res.send(err);
-  //     } else {
-  //       res.json({ message: "Successfully deleted car!" });
-  //     }B
-  //   });
-  // }
+  public deleteCar(req: Request, res: Response): void {
+    mongooseCars.deleteOne({ _id: req.params.carId }),
+      (err: any) => {
+        if (err) {
+          res.send(err);
+        } else {
+          res.json({ message: "Successfully deleted car!" });
+        }
+      };
+  }
 }

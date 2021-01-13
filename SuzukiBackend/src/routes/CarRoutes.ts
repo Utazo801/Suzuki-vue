@@ -36,16 +36,16 @@ export class CarRoutes {
       .get((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.CarController.getCarWithID);
+      }, this.CarController.getCarWithID)
 
-    // .put((req: Request, res: Response, next: NextFunction) => {
-    //   console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
-    //   next();
-    // }, this.csudijoController.updateCar)
+      .put((req: Request, res: Response, next: NextFunction) => {
+        console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
+        next();
+      }, this.CarController.updateCar)
 
-    // .delete((req: Request, res: Response, next: NextFunction) => {
-    //   console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
-    //   next();
-    // }, this.csudijoController.deleteCar);
+      .delete((req: Request, res: Response, next: NextFunction) => {
+        console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
+        next();
+      }, this.CarController.deleteCar);
   }
 }
