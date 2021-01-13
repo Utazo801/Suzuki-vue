@@ -26,33 +26,35 @@ export class CarController {
     });
   }
 
-  // public getTopCars(req: Request, res: Response): void {
-  //   mongooseCars
-  //     .find({})
-  //     .sort({ numberOfVote: "desc" })
-  //     .limit(1)
-  //     .exec((err, car) => {
-  //       if (err) {
-  //         res.send(err);
-  //       } else {
-  //         if (car.length > 0) {
-  //           const max = (car[0] as any).numberOfVote;
-  //           mongooseCars.find({ numberOfVote: max }, (error, cars) => {
-  //             if (error) {
-  //               res.send(error);
-  //             } else {
-  //               // 9. feladat:
-  //               // Az ételek összes adata átkerül, nekünk elegendőek az ételek nevei
-  //               res.json(cars);
-  //             }
-  //           });
-  //         } else {
-  //           // Ha még nincs étel a kollekcióban:
-  //           res.json({ error: "No car!" });
-  //         }
-  //       }
-  //     });
-  // }
+  public getMostExpensiveCar(req: Request, res: Response): void {
+    mongooseCars
+      .find({})
+      .sort({ Price: "desc" })
+      .limit(1)
+      .exec((err, car) => {
+        if (err) {
+          res.send(err);
+        } else {
+          res.json(car);
+          // if (car.length > 0) {
+
+          //   const max = (car[0] as any).numberOfVote;
+          //   mongooseCars.find({ numberOfVote: max }, (error, cars) => {
+          //     if (error) {
+          //       res.send(error);
+          //     } else {
+          //       // 9. feladat:
+          //       // Az ételek összes adata átkerül, nekünk elegendőek az ételek nevei
+          //       res.json(cars);
+          //     }
+          //   });
+          // } else {
+          //   // Ha még nincs étel a kollekcióban:
+          //   res.json({ error: "No car!" });
+          // }
+        }
+      });
+  }
 
   public getCarWithID(req: Request, res: Response): void {
     mongooseCars.findById(req.params.carId, (err: any, car: any) => {

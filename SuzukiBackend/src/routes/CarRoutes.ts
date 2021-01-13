@@ -19,10 +19,10 @@ export class CarRoutes {
         next();
       }, this.CarController.addNewCar);
 
-    // app.route("/carbest").get((req: Request, res: Response, next: NextFunction) => {
-    //   console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
-    //   next();
-    // }, this.CarController.getTopCars);
+    app.route("/expensive").get((req: Request, res: Response, next: NextFunction) => {
+      console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
+      next();
+    }, this.CarController.getMostExpensiveCar);
 
     // Contact detail
     app
