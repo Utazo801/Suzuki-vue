@@ -3,11 +3,11 @@ import bodyParser from "body-parser";
 // import cors, { CorsOptions } from "cors";
 import express from "express";
 import mongoose from "mongoose";
-import { CsudijoRoutes } from "./routes/csudijoRoutes";
+import { CarRoutes } from "./routes/CarRoutes";
 
 class App {
   public app: express.Application;
-  public csudijoRoutePrv: CsudijoRoutes = new CsudijoRoutes();
+  public CarRoutePrv: CarRoutes = new CarRoutes();
   public mongoUrl: string = "";
   // URL with auth
   // public mongoUrl: string = 'mongodb://nits:pwd123@localhost:27017/CRMdb';
@@ -15,7 +15,7 @@ class App {
   constructor() {
     this.app = express();
     this.expressConfig();
-    this.csudijoRoutePrv.routes(this.app);
+    this.CarRoutePrv.routes(this.app);
     this.mongoSetup();
   }
 

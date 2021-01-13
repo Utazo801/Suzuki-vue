@@ -1,37 +1,37 @@
 import { NextFunction, Request, Response } from "express";
-import { CsudijoController } from "../controllers/CarController";
+import { CarController } from "../controllers/CarController";
 
-export class CsudijoRoutes {
-  public csudijoController: CsudijoController = new CsudijoController();
+export class CarRoutes {
+  public CarController: CarController = new CarController();
 
   public routes(app: any): void {
     // Cars
     app
-      .route("/csudijo")
+      .route("/cars")
       .get((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.getAllCars)
+      }, this.CarController.getAllCars)
 
       // POST endpoint
       .post((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.addNewCar);
+      }, this.CarController.addNewCar);
 
-    app.route("/csudijobest").get((req: Request, res: Response, next: NextFunction) => {
-      console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
-      next();
-    }, this.csudijoController.getTopCars);
+    // app.route("/carbest").get((req: Request, res: Response, next: NextFunction) => {
+    //   console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
+    //   next();
+    // }, this.CarController.getTopCars);
 
     // Contact detail
     app
-      .route("/csudijo/:foodId")
+      .route("/cars/:carId")
       // get specific food, pl.: GET http://localhost:3000/csudijo/5d7a971dd9740e07b8bc725c
       .get((req: Request, res: Response, next: NextFunction) => {
         console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
         next();
-      }, this.csudijoController.getCarWithID);
+      }, this.CarController.getCarWithID);
 
     // .put((req: Request, res: Response, next: NextFunction) => {
     //   console.log(`Request type ${req.method} from: ${req.originalUrl} time: ${new Date().toLocaleTimeString()}`);
